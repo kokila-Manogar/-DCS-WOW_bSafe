@@ -1,1 +1,1 @@
-# -DCS-WOW_bSafe
+#DCS-WOW_bSafe
