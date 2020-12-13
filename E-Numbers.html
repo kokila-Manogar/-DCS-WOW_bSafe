@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Emergency Numbers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  Styles  -->
+  <link rel="stylesheet" href="css00.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Bitter|Dosis:400,700');
+ html {
+	 box-sizing: border-box;
+}
+ *, *::before, *::after {
+	 box-sizing: inherit;
+}
+ a {
+	 color: #ffffcc ;
+	 text-decoration: none;
+}
+ body {
+	 background: #143544;
+	 font-family: 'Dosis', sans-serif;
+	 color: white;
+         background-image: url("https://image.freepik.com/free-vector/dark-gradient-violet-colour-tones-background_23-2148474200.jpg");
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+ h1 {
+	 font-family: 'Bitter', serif;
+	 color: white;
+}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#" class="is-active">E-Numbers</a>
+        </li>
+    
+      </ul>
+    </nav>
+<div class="container">
+  <h2>Emergency Number Table</h2>
+    
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Emergency Contact</th>
+        <th>Number</th>
+        
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Police</td>
+        <td><i class="fa fa-mobile-phone" style="font-size:26px">... </i> <a href='tel:101')> 100 </a></td>
+        
+      </tr>
+      <tr>
+        <td>Ambulance</td>
+        <td> <i class="fa fa-mobile-phone" style="font-size:26px">... </i><a href='tel:108')> 108 </a></td>
+        
+      </tr>
+      <tr>
+        <td>Fire Service</td>
+        <td><i class="fa fa-mobile-phone" style="font-size:26px">... </i> <a href='tel:101')> 101</a></td>
+       
+      </tr>
+      <tr>
+        <td>Child Helpline</td>
+        <td> <i class="fa fa-mobile-phone" style="font-size:26px">... </i> <a href='tel:1098')> 1098</a></td>  
+      </tr>
+      <tr>
+        <td>Women Helpline</td>
+        <td> <i class="fa fa-mobile-phone" style="font-size:26px">... </i> <a href='tel:1091')> 1091</a></td>  
+      </tr>
+      <tr>
+        <td>Senior Citizen Helpline</td>
+        <td> <i class="fa fa-mobile-phone" style="font-size:26px">... </i> <a href='tel:1090')> 1090</a></td>  
+      </tr>
+      <tr>
+        <td>Election Commision Helpline</td>
+        <td> <i class="fa fa-mobile-phone" style="font-size:26px">... </i> <a href='tel:1950')> 1950</a></td>  
+      </tr>
+      <tr>
+        <td>Anti Corruption Helpline</td>
+        <td> <i class="fa fa-mobile-phone" style="font-size:26px">... </i> <a href='tel:1098')> 08022342100</a></td>  
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Note that all this numbers are for complete emergency purpose</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

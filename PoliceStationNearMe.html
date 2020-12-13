@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Police Station Near Me!!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  Styles  -->
+  <link rel="stylesheet" href="css00.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Bitter|Dosis:400,700');
+ html {
+	 box-sizing: border-box;
+}
+ *, *::before, *::after {
+	 box-sizing: inherit;
+}
+ a {
+	 color: #ffffcc ;
+	 text-decoration: none;
+}
+ body {
+	 background: #143544;
+	 font-family: 'Dosis', sans-serif;
+	 color: white;
+         background-image: url("https://image.freepik.com/free-vector/dark-gradient-violet-colour-tones-background_23-2148474200.jpg");
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+ h1 {
+	 font-family: 'Bitter', serif;
+	 color: white;
+}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#" class="is-active">Plolice Station Near Me</a>
+        </li>
+    
+      </ul>
+    </nav>
+<div class="container">
+  <h2>List of Ploice Station Near Bengaluru</h2>
+    
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+    <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Police Station</th>
+        <th>Adress</th>
+        <th>Phone</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Adugodi Police Station</td>
+        <td> No.406, Hosur Lashkar Road, Adugodi,
+Bengaluru-560030</td>
+        <td>+918022942573</td>
+        <td>adugodibcp@ksp.gov.in</td>
+      </tr>
+            <tr>
+        <td>Pulikeshi Nagar Police Station</td>
+        <td>Lazar Road, Pulikeshi Nagar, Bengaluru-560005</td>
+        <td>+918022942548 </td>
+        <td>ftownbcp@ksp.gov.in</td>
+      </tr>
+            <tr>
+        <td>Ramamurthy Nagar Police Station</td>
+        <td>Near Sainik Kalyana Bhavan, East Of NGEF
+Kasthuri Nagar, Dooravani Post, Bengaluru -560016</td>
+        <td>+918022942554</td>
+        <td>rmnagarbcp@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>Siddapura Police Station</td>
+        <td> NIMHANS Compound, Someshwaranagara,
+Hosuru Main Road, Bengaluru-560029</td>
+        <td>+918022942572</td>
+        <td>spurabcp@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>Upparpet Traffic Police Station</td>
+        <td>KG Road, Subhash Nagar, Bengaluru-560009</td>
+        <td>+918022942665</td>
+        <td>upettrafficbcp@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>Vidhana Soudha Police Station</td>
+        <td>MS Building, Ground Floor, Dr.Ambedkar
+Veedhi, Bengaluru- 560 001</td>
+        <td> +918022942590</td>
+        <td>vsoudhabcp@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>Whitefield Traffic Police Station</td>
+        <td> Near Kadugodi Railway Flyover, Kadugodi
+Police Quarters, Bengaluru-560067.</td>
+        <td>+918022943706</td>
+        <td>whitefieldtraficbcp@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>Yelahanka Traffic Police Station</td>
+        <td>Opposite KPTCL, Bengaluru-Bellary Road,
+Yelahanka, Bengaluru-560064.</td>
+        <td>+918022943024</td>
+        <td>ylktrafficbep@ksp.gov.in</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Note that all this numbers are for complete emergency purpose</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

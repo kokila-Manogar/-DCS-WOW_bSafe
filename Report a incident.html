@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8">
+  <title>Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="css00.css">
+</head>
+  
+<div class="wrapper">
+  <header class="nav-header">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#" class="is-active">Report</a>
+        </li>
+    
+      </ul>
+    </nav>
+  </header>
+  <form action="" method="get">
+    <h1>Complaint Report Form</h1>
+    <div class="row">
+      <div class="col col50">
+        <div class="input">
+          <label>Incident_Date:</label>
+          <input type="date" class="field">
+        </div>
+      </div>
+      <div class="col col50">
+        <div class="input">
+          <label for="Lastname">Incident_Time:</label>
+          <input type="time" id="" placeholder="LastName" class="field">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col50">
+      <label>Phone_No:</label>
+          <input type="number" class="field">
+      </div>
+      <div class="col col50">
+        <div class="input">
+          <label for="place">Email :</label>
+          <input type="email" id="email" placeholder="xyz@gmail.com" class="field">
+        </div>
+      </div>
+      <div class="col col50">
+        <div class="input">
+          <label for="place">Location :</label>
+          <input type="text" id="email" placeholder="Bengaluru" class="field">
+        </div>
+      </div>
+<div class="col col50">
+        <div class="input">
+          <label for="Lastname">Country :</label>
+          <input type="country" id="" placeholder="India" class="field">
+        </div>
+    </div>
+<div class="col">
+        <div class="input">
+          <label for="Lastname">Describe the incident :</label>
+          <textarea name="report" rows="10" cols="30">On that time</textarea>
+        </div>
+    </div>
+<div class="col col50">
+          <input type="checkbox" placeholder="On that day...">
+	  </div>
+       
+<div class="col col50">
+        <div class="input">
+          <label for="Lastname"> I assure that no any lie in this report as per my Knownledge</label>
+</div>
+        </div>
+
+ 
+<br>
+<hr>
+    <center><button onclick="myFunction()">Submit</button></center>
+<h3 id="demo"></h3>
+  </form>
+
+
+  </footer>
+</div>
+
+<script>
+function myFunction() {
+  var txt;
+  var r = confirm("You sure that you need to submit this report !!!");
+}
+</script>
+</html>

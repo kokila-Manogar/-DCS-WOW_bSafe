@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Higher official Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  Styles  -->
+  <link rel="stylesheet" href="css00.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Bitter|Dosis:400,700');
+ html {
+	 box-sizing: border-box;
+}
+ *, *::before, *::after {
+	 box-sizing: inherit;
+}
+ a {
+	 color: #000000 ;
+	 text-decoration: none;
+}
+ body {
+	 background: #143544;
+	 font-family: 'Dosis', sans-serif;
+	 color: white;
+         background-image: url("https://image.freepik.com/free-vector/dark-gradient-violet-colour-tones-background_23-2148474200.jpg");
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+ h1 {
+	 font-family: 'Bitter', serif;
+	 color: white;
+}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+ <header class="nav-header">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#" class="is-active">Higher official Contact</a>
+        </li>
+    
+      </ul>
+    </nav>
+ </header>
+<div class="container">
+  <h2>Higher official Contact Details</h2>
+    
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+    <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Contact Name</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td> Addl SP Bengaluru</td>
+        <td>+918022260603</td>
+        <td>addlbng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td> CPI Anekal Circle</td>
+        <td> +918027859335</td>
+        <td>cpianekalbng@ksp.gov.in</td>
+      </tr>
+	  <tr>
+        <td> CPI Attibele Circle</td>
+        <td>+918027821368</td>
+        <td>cpiattibelebng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>CPI Doddaballapura Circle</td>
+        <td>+918027625601</td>
+        <td>cpidbpurabng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>CPI Hosakote Circle</td>
+        <td>+918027931570</td>
+        <td>cpihosakotebng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>DSP Anekal Sub Division</td>
+        <td>+919876543210</td>
+        <td>anekalsdpobng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td> DSP Doddaballapura Sub Division</td>
+        <td>+918027622052</td>
+        <td>sbpodbpurabng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>DSP Hosakote Sub Division</td>
+        <td>+918027932111</td>
+        <td>hosakotesdpobng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>DSP Nelamangala Sub Division</td>
+        <td> +918027722688</td>
+        <td>sdponmlbng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>PI Suryanagara Police Station</td>
+        <td>+918029765300</td>
+        <td>suryanagarabng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td> PI Maadanayakana Halli Police Station</td>
+        <td>+918023713699</td>
+        <td>mnayakahallibng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>PI Suryanagara Police Station</td>
+        <td>+918029765300</td>
+        <td>suryanagarabng@ksp.gov.in</td>
+      </tr>
+      <tr>
+        <td>SP Bengaluru</td>
+        <td>+918022264350</td>
+        <td>spbng@ksp.gov.in</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Note that all this numbers are for complete emergency purpose</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>

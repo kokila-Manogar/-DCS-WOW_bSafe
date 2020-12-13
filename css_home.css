@@ -1,0 +1,40 @@
+body {
+	 background: linear-gradient(coral, rebeccapurple);
+	 border: 10px solid white;
+	 min-height: 100vh;
+	 box-sizing: border-box;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .grid {
+	 flex: 0 0 auto;
+	 perspective: 600px;
+	 display: grid;
+	 grid-template-columns: repeat(3, 150px);
+	 grid-template-rows: repeat(3, 150px);
+	 grid-gap: 20px;
+	 max-width: 480px;
+	 transform: rotate(45deg);
+}
+ .grid div {
+	 background: rgba(255, 255, 255, .15);
+	 border: 1px solid rgba(255, 255, 255, .25);
+	 padding: 20px;
+	 color: Black;
+	 box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, .6);
+	 border-radius: 2px;
+}
+ .grid div:nth-child(odd) {
+	 animation: 1000ms ease-in-out infinite alternate pulse;
+}
+ .grid div:nth-child(even) {
+	 animation: 1000ms 1000ms ease-in-out infinite alternate pulse;
+}
+ @keyframes pulse {
+	 to {
+		 transform: translate3d(0px, 0px, -60px);
+		 box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, .8);
+	}
+}
+ 
