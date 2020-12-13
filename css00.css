@@ -13,6 +13,7 @@
 	 background-image: url("https://image.freepik.com/free-vector/dark-gradient-violet-colour-tones-background_23-2148474200.jpg");
 background-repeat: no-repeat;
   background-size: cover;
+	 background-attachment:fixed;
 	 font-family: 'Dosis', sans-serif;
 	 color: white;
 }
