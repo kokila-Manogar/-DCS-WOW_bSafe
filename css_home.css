@@ -1,6 +1,7 @@
 body {
 	 background: linear-gradient(coral, rebeccapurple);
 	 border: 10px solid white;
+         background-attachment:fixed;
 	 min-height: 100vh;
 	 box-sizing: border-box;
 	 display: flex;
