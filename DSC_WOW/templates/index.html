@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Starts -->
+  <head>
+    <!--  Meta  -->
+    <meta charset="UTF-8">
+    <title>News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--  Style Starts -->
+    <link rel="stylesheet" href="/static/css/css00.css">
+    <style>
+      body{
+        background: linear-gradient(coral, rebeccapurple);
+        background-attachment: fixed;
+	      border: 10px solid white;
+	      box-sizing: border-box;
+	      display: flex;
+	      align-items: center;
+	      justify-content: center;
+       }
+      .rainbow-text {
+         background-image: linear-gradient(to left,coral, rebeccapurple);   -webkit-background-clip: text;
+        color: transparent;
+      }
+  </style>
+  <!--Style Ends-->
+</head>
+<!-- Head ends -->
+<!-- Body Starts -->
+<div class="wrapper py-5">
+  <header class="nav-header">
+    <nav>
+      <ul>
+        <li>
+          <h2 class="rainbow-text">News</h2>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <form action="{{ url_for('news')}}"  method="post","get" class="hi">
+    <h1>Details required :)</h1>
+    <div class="row">
+      <div class="col col50">
+        <div class="input">
+          <label for="firstname">Start_Date:</label>
+          <input type="date" id="04-02-2020" placeholder="04-10-2020" class="field" name="start_date" >
+        </div>
+      </div>
+      <div class="col col50">
+        <div class="input">
+          <label for="Lastname">End_Date:</label>
+          <input type="date" id="" placeholder="LastName" class="field" name="end_date">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col col50">
+      </div>
+      <div class="col col50">
+        <div class="input">
+          <label for="email">Location :</label>
+          <input type="text" id="email" placeholder="Bengaluru" class="field" name="location">
+        </div>
+      </div>
+    <div class="col col50">
+        <div class="input">
+          <label for="Lastname">Country :</label>
+          <input type="country" id="" placeholder="India" class="field" name="country">
+        </div>
+    </div>
+    <br>
+    <br>
+    <center><button type="submit">Submit</button></center>
+  </form>
+</div>
+<!-- Body Ends -->
+</html>

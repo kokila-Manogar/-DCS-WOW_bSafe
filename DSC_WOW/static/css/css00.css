@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Dosis:400,700');
+ html {
+	 box-sizing: border-box;
+}
+ *, *::before, *::after {
+	 box-sizing: inherit;
+}
+ a {
+	 color: #143544;
+	 text-decoration: none;
+}
+ body {
+	 font-family: 'Dosis', sans-serif;
+	 color: white;
+}
+ h1 {
+	 font-family: 'Bitter', serif;
+	 color: white;
+}
+ form {
+	 padding: 0 12px;
+}
+ .row {
+	 margin: 0 0 24px 0;
+}
+ .col {
+	 width: 100%;
+	 margin-bottom: 24px;
+}
+ @media (min-width: 400px) {
+	 .row {
+		 overflow: hidden;
+		 margin: 12px 0 12px -24px;
+	}
+	 .col {
+		 float: left;
+		 padding-left: 24px;
+		 margin-bottom: 0;
+	}
+	 .col.col50 {
+		 width: 50%;
+	}
+	 .col.col33 {
+		 width: 33.33333%;
+	}
+	 .col.col25 {
+		 width: 25%;
+	}
+	 form {
+		 padding: 0 24px;
+	}
+}
+ .wrapper {
+	 max-width: 640px;
+	 height: 100vh;
+	 margin: 0 auto;
+}
+ button {
+	 margin: 0 0 80px;
+	 height: 45px;
+	 width: 120px;
+	 background: white;
+	 border: 1px solid darkgrey;
+}
+ button:hover {
+	 color: orangered;
+	 font-weight: 700;
+	 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+ textarea {
+	 width: 100%;
+}
+ label, .label {
+	 display: block;
+	 font-size: 0.9em;
+	 color: white;
+	 margin-bottom: 5px;
+}
+ label.checkbox, .label.checkbox {
+	 width: 100%;
+}
+ .field {
+	 width: 100%;
+	 padding: 5px;
+	 margin: 5px 0;
+}
+ .field:focus {
+	 box-shadow: 0 0 10px white;
+}
+ .nav-header {
+	 background: white;
+	 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+ ul {
+	 margin: 0 0 45px;
+	 padding: 5px 0;
+}
+ li {
+	 list-style: none;
+	 text-align: center;
+	 display: block;
+}
+ li:hover > a, li a.is-active {
+	 color: orangered;
+}
+ li a {
+	 height: 100%;
+	 width: 100%;
+	 padding-top: 4px;
+	 display: inline-block;
+	 margin: 10px auto;
+	 font-weight: 700;
+}
+@media(min-width:589px){
+	.hi{
+		margin-top: 25%;
+	}
+}
+ @media (min-width: 400px) {
+	 ul {
+		 width: 100%;
+		 height: 54px;
+		 overflow: hidden;
+	}
+	 ul li {
+		 display: inline-block;
+		 width: 25%;
+		 float: left;
+		 margin-top: 0;
+	}
+	 ul li:hover {
+		 border-bottom: 5px solid orangered;
+	}
+}
+ .footer {
+	 color: darkgray;
+	 font-size: 0.85em;
+	 height: 40px;
+	 background: white;
+	 position: fixed;
+	 bottom: 0;
+	 width: 100%;
+	 box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+	 max-width: 640px;
+	 margin: 0 auto;
+	 text-align: center;
+	 padding-top: 10px;
+}
+ .footer span {
+	 color: red;
+}
+/* Style tab links */
+ .tablink {
+	 background-color: #555;
+	 color: white;
+	 float: left;
+	 border: none;
+	 outline: none;
+	 cursor: pointer;
+	 padding: 14px 16px;
+	 font-size: 17px;
+	 width: 25%;
+}
+ .tablink:hover {
+	 background-color: #777;
+}
+/* Style the tab content (and add height:100% for full page content) */
+ .tabcontent {
+	 color: white;
+	 display: none;
+	 padding: 100px 20px;
+	 height: 100%;
+}
+ #Home {
+	 background-image: url("bg-home.jpg");
+	 background-repeat: no-repeat;
+	 background-size: auto;
+}
+ #News {
+	 background-color: green;
+}
+ #Contact {
+	 background-color: blue;
+}
+ #About {
+	 background-color: orange;
+}
+ .grid-container {
+	 display: grid;
+	 grid-template-columns: auto auto auto;
+	 background-color: #2196f3;
+	 padding: 10px;
+}
+ .grid-item {
+	 background-color: rgba(255, 255, 255, 0.8);
+	 border: 1px solid rgba(0, 0, 0, 0.8);
+	 padding: 20px;
+	 font-size: 30px;
+	 text-align: center;
+}
+ #map {
+	 height: 400px;
+	 width: 100%;
+}
+ 

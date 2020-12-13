@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>bSafe</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+      body{
+        background: linear-gradient(coral, rebeccapurple);
+	      border: 10px solid white;
+	      min-height: 100vh;
+    	  box-sizing: border-box;
+	      display: flex;
+	      align-items: center;
+	      justify-content: center;
+      }
+      a.custom-card:hover {
+        color: inherit;
+      } 
+      .rainbow-text {
+        background-image: linear-gradient(to left,coral, rebeccapurple);   -webkit-background-clip: text;
+        color: transparent;
+      }
+  </style>
+</head> 
+<body> 
+  <ol> 
+  <div class="container pr-5 py-5">
+  {%for i in range(0, leng)%} 
+    <a class="custom-card" href="{{link[i]}}"style="text-decoration: none;">
+      <div class="card">
+        <div class="card-body rainbow-text" style="display:inline-block;">{{a[i]}}</div>
+        <div class="progress" style="height:75px;">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+              aria-valuemin="0" aria-valuemax="100" style="width:{{pred[i]}}%;background-color:{{col[i]}};">
+              {{pred[i]}}% Danger
+          </div>
+        </div>
+      </div>
+    </a>
+    <br>
+  {%endfor%} 
+  </div>
+  </ol> 
+</body> 
+</html> 
+
+
+
